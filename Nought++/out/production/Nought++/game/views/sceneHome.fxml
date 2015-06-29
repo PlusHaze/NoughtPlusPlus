@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="451.0" prefWidth="471.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="game.controllers.HomeController">
+   <center>
+      <Pane prefHeight="432.0" prefWidth="364.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnStartGame" layoutX="127.0" layoutY="365.0" mnemonicParsing="false" onAction="#btnStartGame_onAction" prefHeight="37.0" prefWidth="96.0" style="-fx-background-radius: 1;" text="Start Game" />
+            <Label layoutX="130.0" layoutY="206.0" text="Player name:">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtPlayerName" layoutX="75.0" layoutY="236.0" prefHeight="35.0" prefWidth="216.0" promptText="Enter name here" style="-fx-background-radius: 0;">
+               <font>
+                  <Font size="15.0" />
+               </font></TextField>
+            <Label layoutX="128.0" layoutY="22.0" prefHeight="33.0" prefWidth="94.0" text="Player Image">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <VBox layoutX="109.0" layoutY="55.0" prefHeight="90.0" prefWidth="101.0" style="-fx-border-color: gray;">
+               <children>
+                  <ImageView fx:id="imgViewPlayer" fitHeight="132.0" fitWidth="126.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/chicken-icon.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </children>
+            </VBox>
+            <Label layoutX="151.0" layoutY="288.0" prefHeight="25.0" prefWidth="65.0" text="Grid size:">
+               <font>
+                  <Font size="14.5" />
+               </font>
+            </Label>
+            <RadioButton fx:id="rdo3x3" layoutX="102.0" layoutY="322.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="57.0" selected="true" text="3 x 3">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="tGroup" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="rdo4x4" layoutX="207.0" layoutY="323.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="60.0" text="4 x 4" toggleGroup="$tGroup">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </RadioButton>
+         </children>
+      </Pane>
+   </center>
+   <left>
+      <VBox alignment="BASELINE_LEFT" minWidth="0.0" prefHeight="370.0" prefWidth="107.0" spacing="20.0" style="-fx-background-color: gray;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="75.0" fitWidth="92.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/Spaceship.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lblNewGame" text="New Game" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label fx:id="lblRecentScores" text="Recent Scores" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label fx:id="lblAbout" onMouseClicked="#lblAbout_onMouseClicked" text="About" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label fx:id="lblQuit" text="Quit" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+         </children>
+         <padding>
+            <Insets left="8.0" top="20.0" />
+         </padding>
+      </VBox>
+   </left>
+</BorderPane>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Nought++.jnlp">
+  <information>
+    <title>Sample JavaFX Application</title>
+    <vendor>Unknown vendor</vendor>
+    <description>Sample JavaFX 2.0 application.</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="Nought++.jar" size="90054" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="600" height="400" main-class="game.controllers.Main"  name="Nought++" />
+  <update check="background"/>
+</jnlp>

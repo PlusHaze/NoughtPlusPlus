@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="625.0" prefWidth="602.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="game.controllers.GameController">
+   <top>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0" style="-fx-background-color: gray;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="imgPlayer1" fitHeight="92.0" fitWidth="101.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="lblPlayer1" text="P1" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblScore" prefHeight="28.0" prefWidth="78.0" text="     0 - 0  " textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblPlayer2" text="P2" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="imgPlayer2" fitHeight="92.0" fitWidth="101.0" layoutX="170.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <GridPane fx:id="gameGrid" BorderPane.alignment="CENTER">
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <columnConstraints>
+            <ColumnConstraints />
+            <ColumnConstraints />
+         </columnConstraints>
+      </GridPane>
+   </center>
+   <left>
+      <VBox alignment="BASELINE_LEFT" fillWidth="false" minWidth="0.0" prefHeight="370.0" prefWidth="107.0" spacing="20.0" style="-fx-background-color: gray; -fx-border-color: #2c3e50;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="76.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/Spaceship.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lblHome" onMouseClicked="#lblHome_onMouseClicked" text="Home" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblAbout" layoutX="19.0" layoutY="213.0" onMouseClicked="#lblAbout_onMouseClicked" text="About" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblQuit" onMouseClicked="#lblQuit_onMouseClicked" text="Quit" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Pane prefHeight="77.0" prefWidth="97.0" />
+            <Label prefHeight="39.0" prefWidth="97.0" text="Created by +Haze" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+         </children>
+         <padding>
+            <Insets left="8.0" top="20.0" />
+         </padding>
+      </VBox>
+   </left>
+   <bottom>
+      <AnchorPane prefHeight="84.0" prefWidth="602.0" style="-fx-background-color: gray;" BorderPane.alignment="CENTER">
+         <children>
+            <ToggleButton fx:id="btnPause" layoutX="38.0" layoutY="25.0" mnemonicParsing="false" onAction="#btnPause_onAction" prefHeight="30.0" prefWidth="34.0" style="-fx-background-radius: 0;" text="| |">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </ToggleButton>
+            <Separator layoutX="106.0" maxHeight="-Infinity" maxWidth="-Infinity" orientation="VERTICAL" prefHeight="84.0" prefWidth="0.0" />
+            <HBox alignment="CENTER" layoutX="112.0" layoutY="3.0" prefHeight="78.0" prefWidth="488.0">
+               <children>
+                  <Label fx:id="lblWhoseTurn" text="[Player name] it's your turn.." textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>
