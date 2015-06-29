@@ -3,7 +3,7 @@
 <p align="center">
 
 Nought++ is an enhanced version of the traditional noughts and crosses game. This game was developed in JavaFX.
-This is where the user can change their image and name, view the abouts page and the recent scores page.
+The home page is where the user can change their image, name, view the abouts page and the recent scores page.
 The main home screen looks like this.
 
 <br>
