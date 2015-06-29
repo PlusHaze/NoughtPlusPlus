@@ -21,7 +21,7 @@ This is the recent scores where you can view all of the past games you've played
 <br>
 
 
-Finally, here's hte main game scene.
+Finally, here's the main game scene.
 
 <br>
 <br>
