@@ -45,7 +45,7 @@ public class GameController implements Initializable {
     private Player player1, nextPlayersTurn;
     private ComputerPlayer computer;
     private GridPaneLogic gridLogic;
-    MediaPlayer gameWonSound;
+    private MediaPlayer gameWonSound;
     private boolean gamePaused;
 
     public void initialize(URL location, ResourceBundle resources) {
