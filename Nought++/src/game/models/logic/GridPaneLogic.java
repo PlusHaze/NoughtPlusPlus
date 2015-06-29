@@ -175,10 +175,10 @@ public class GridPaneLogic {
      */
     public GameState checkGameState() {
 
-        //This method checks if a player has won the gameLogic
-        //The function returns GameTuple object which was an attempt of implementing a tuple
-        //If the game is won it returns the coordinates of the buttons that match
-        //It calls other methods which do individual checks
+        //This method checks if a player has won the game
+        //The function returns GameState object which was an attempt at implementing a tuple
+        //If the game is won it returns the game status, the player that won the game and  coordinates of the buttons that won
+        //It calls other methods which do individual checks if previous check did not result in a game win
 
         GameState horizontalCheck = checkGridHorizontally();
         if (horizontalCheck.getGameStatus() == Status.GAME_WON)
