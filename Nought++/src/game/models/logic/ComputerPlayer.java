@@ -89,7 +89,7 @@ public class ComputerPlayer extends Player {
         //Creates a mini grid pane logic which it uses to try every possible move to see it can win
         GridPaneLogic tempLogic = new GridPaneLogic(gridPaneClone, boardDimension, amountToWin);
 
-        //The list of coordinates that if the player moved to would win the age
+        //The list of coordinates that if the player moved to would win the game
         List<Coordinate> player1WinList = new ArrayList<>();
         List<Coordinate> computerWinList = new ArrayList<>();
 
