@@ -43,7 +43,7 @@ public class AlertBox {
      * @param msg The message body to display
      * @return The Button result
      */
-    public static ButtonResult showConfirmDialog(String headerText,String msg) {
+    public static ButtonResult showConfirmDialog(String headerText, String msg) {
 
         Alert alert = getDefaultAlertBox("Alert", headerText, msg);
         alert.setAlertType(Alert.AlertType.CONFIRMATION);
